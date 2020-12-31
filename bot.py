@@ -5,18 +5,10 @@ import telebot
 from telebot.apihelper import ApiException
 
 from do_image_stuff import do_magic, do_me_out
+from token import TOKEN
 
-proxy = "http://localhost:8123"
-
-os.environ["http_proxy"] = proxy
-os.environ["HTTP_PROXY"] = proxy
-os.environ["https_proxy"] = proxy
-os.environ["HTTPS_PROXY"] = proxy
-
-BOT = telebot.TeleBot("<yourtoken>")
-
+BOT = telebot.TeleBot(TOKEN)
 got_image = dict()
-
 
 
 @BOT.message_handler(commands=["start"])
@@ -36,7 +28,6 @@ def reset(message):
 
 @BOT.message_handler(commands=["laymeout"])
 def lay_me_out(message):
-
     message = BOT.send_message(
         message.chat.id,
         "Give me a sec!",

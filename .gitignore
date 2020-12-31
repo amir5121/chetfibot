@@ -7,3 +7,4 @@ archive
 *.mp4
 gifsbot
 *.dat
+token.py
