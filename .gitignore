@@ -1,0 +1,9 @@
+venv
+.idea
+temp
+bot
+archive
+*pycache*
+*.mp4
+gifsbot
+*.dat
