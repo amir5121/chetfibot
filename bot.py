@@ -13,7 +13,7 @@ os.environ["HTTP_PROXY"] = proxy
 os.environ["https_proxy"] = proxy
 os.environ["HTTPS_PROXY"] = proxy
 
-BOT = telebot.TeleBot("1140263991:AAEr3RIGdO5TN7QCnZYcNAKK9dr7xCHiJe8")
+BOT = telebot.TeleBot("<yourtoken>")
 
 got_image = dict()
 
